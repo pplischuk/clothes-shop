@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from './components/header/header'
+// import ShoesContainer from './redux/containers/shoesContainer'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-
-    </div>
+      {/* <ShoesContainer /> */}
+    </div>  
   );
 }
 

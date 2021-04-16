@@ -1,0 +1,1 @@
+export const INPUT_ONCHANGE = 'INPUT_ONCHANGE';

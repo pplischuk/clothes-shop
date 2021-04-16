@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Item(props){
+
 	return(
 		<div className = 'item'>
 			<div className = 'image'>{props.img}</div>

@@ -7,7 +7,7 @@ import {
  } from "react-router-dom";
 import Home from '../home/home'
 import Accessories from '../accessories/accessories'
-import Shoes from '../shoes/shoes'
+import ShoesContainer from '../../redux/containers/shoesContainer'
 import Clothes from '../clothes/clothes'
 import ContactUs from '../contact/contact'
 import Basket from '../basket/basket'
@@ -28,7 +28,7 @@ function Header(){
 			<Switch>
 				<Route exact path = '/' component = {Home}/>
 				<Route exact path = '/accessories' component = {Accessories}/>
-				<Route exact path = '/shoes' component = {Shoes}/>
+				<Route exact path = '/shoes' component = {ShoesContainer}/>
 				<Route exact path = '/clothes' component = {Clothes}/>
 				<Route exact path = '/contact' component = {ContactUs}/>
 				<Route exact path = '/basket' component = {Basket}/>
