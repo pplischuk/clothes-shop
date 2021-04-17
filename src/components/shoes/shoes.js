@@ -14,19 +14,15 @@ class Shoes extends React.Component{
 		this.props.change(e.target.value)
 	}
 	
+	componentDidMount(){
+		this.props.getShoes();
+	}
+
 	render(){
-		console.log(this.props.shoes.text)
+		console.log(this.props.data)
 		return(
 			<div>
-				
-				<input 
-				type = 'text'
-				onChange ={this.handleChange}
-				value = {this.props.shoes.texs}
-				/>
-				<div>
-					{this.props.shoes.text}
-				</div>
+			take items
 			</div>
 		)
 	}
