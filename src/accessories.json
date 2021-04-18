@@ -1,0 +1,34 @@
+[
+	{
+		"id":1,
+		"img":"https://scamper.com.ua/content/images/31/1000x523l80nn0/krosivki-adidas-yeezy-boost-350-v2-static-reflective-black-73198289947663.jpg",
+		"name":"SWATCH",
+		"price": 300,
+		"color":["black","white"],
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque enim ac lorem mattis maximus. Aliquam egestas turpis est, nec tempus lacus consequat ac. Proin sodales, ipsum ut interdum tempor, diam lorem tristique eros, eget auctor dolor nunc non lorem. "
+	},
+	{
+		"id":2,
+		"img":"https://scamper.com.ua/content/images/31/1000x523l80nn0/krosivki-adidas-yeezy-boost-350-v2-static-reflective-black-73198289947663.jpg",
+		"name":"G-SHOCK",
+		"price": 120,
+		"color":["white","black"],
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque enim ac lorem mattis maximus. Aliquam egestas turpis est, nec tempus lacus consequat ac. Proin sodales, ipsum ut interdum tempor, diam lorem tristique eros, eget auctor dolor nunc non lorem. "
+	},
+	{
+		"id":3,
+		"img":"https://scamper.com.ua/content/images/31/1000x523l80nn0/krosivki-adidas-yeezy-boost-350-v2-static-reflective-black-73198289947663.jpg",
+		"name":"Prada",
+		"price": 500,
+		"color":["black","white"],
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque enim ac lorem mattis maximus. Aliquam egestas turpis est, nec tempus lacus consequat ac. Proin sodales, ipsum ut interdum tempor, diam lorem tristique eros, eget auctor dolor nunc non lorem. "
+	},
+	{
+		"id":4,
+		"img":"https://scamper.com.ua/content/images/31/1000x523l80nn0/krosivki-adidas-yeezy-boost-350-v2-static-reflective-black-73198289947663.jpg",
+		"name":"Balenciaga",
+		"price": 200,
+		"color":["red","black","white"],
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque enim ac lorem mattis maximus. Aliquam egestas turpis est, nec tempus lacus consequat ac. Proin sodales, ipsum ut interdum tempor, diam lorem tristique eros, eget auctor dolor nunc non lorem. "
+	}
+]

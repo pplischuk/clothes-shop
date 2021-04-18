@@ -1,5 +1,5 @@
 import React from 'react'
-// import Item from './components/item/item'
+import Item from '../item/item'
 
 class Shoes extends React.Component{
 	constructor(props){
@@ -30,10 +30,11 @@ class Shoes extends React.Component{
 	render(){
 		return(
 			<div>
-			{console.log(this.props.shoes.data.data)}
-			<ul>
-				{this.handleList()}
-			</ul>
+				{console.log(this.props.shoes.data.data)}
+				<Item price = '100' img = "picture"/>
+				<ul>
+					{this.handleList()}
+				</ul>
 			</div>
 		)
 	}

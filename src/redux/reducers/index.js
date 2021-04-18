@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
 import reducers from './reducers'
+import accessoriesReducer from './reducersAccessories'
 
 export default combineReducers({
-	shoes: reducers 
+	shoes: reducers ,
+	accessories: accessoriesReducer
 })
