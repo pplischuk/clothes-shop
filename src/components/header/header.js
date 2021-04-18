@@ -36,7 +36,6 @@ function Header(){
 				<Route exact path = '/clothes' component = {Clothes}/>
 				<Route exact path = '/contact' component = {ContactUs}/>
 				<Route exact path = '/basket' component = {Basket}/>
-
 			</Switch>
 		</Router>
 	)
