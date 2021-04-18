@@ -1,9 +1,7 @@
-import react from 'react'
 import {
 	BrowserRouter as Router,
 	Switch,
 	Route,
-	Link
  } from "react-router-dom";
 import Home from '../home/home'
 import Accessories from '../accessories/accessories'

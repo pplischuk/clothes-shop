@@ -1,38 +1,33 @@
 import {
-	INPUT_ONCHANGE,
 	GET_SHOES_REQUEST,
 	GET_SHOES_SUCCESS,
 	GET_SHOES_FAIL
-	} from '../constants/constants'
-
-export const inputOnChange = text => ({
-	type: INPUT_ONCHANGE,
-	text
-})
-
+	} from '../constants/constants';
+import { getShoesAll } from '../../api/goods.js'
 
 export const getShoesSuccess = payload => ({
-	type: GET_SHOES_REQUEST,
+	type: GET_SHOES_SUCCESS,
 	payload
-})
+});
 
 export const getShoesRequest = () => ({
-	type: GET_SHOES_SUCCESS
-})
+	type: GET_SHOES_REQUEST
+});
+
 export const getShoesError = payload => ({
 	type: GET_SHOES_FAIL,
 	payload
 })
 
-export const getShoes = (text) => {
+export const getShoesThunk = () => {
 	return dispatch => {
 		 dispatch(getShoesRequest());
-		 getShoes(text)
-			  .then(res => res.json())
-			  .then(res => {
+		 getShoesAll()
+				.then(res => res.json())
+				.then(res => {	
 					dispatch(getShoesSuccess({data: res}));
-			  })
-			  .catch(error => {
+				})
+				.catch(error => {
 					console.log(error);
 					dispatch(getShoesError(error.message));
 			  });
