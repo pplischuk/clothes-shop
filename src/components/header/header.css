@@ -1,0 +1,58 @@
+.navList{
+	display: flex;
+}
+
+li{
+	margin: 0;
+	list-style-type: none;
+	margin-right: 50px;
+	align-items: center;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	align-items:center;
+}
+
+a{
+	text-decoration: none;
+	color:beige;
+	text-align: center;
+}
+
+li:hover{
+	text-decoration-line: underline;
+	transition:0.3s
+}
+
+.header{
+	margin: 0 auto;
+	max-width: 1300px;
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	align-items:center;
+}
+
+img{
+	width: 30px;
+}
+
+.wrapper{
+	background-color: #746bde;
+	max-width: 100%;
+}
+
+.logo{
+	margin: 0;
+	color: beige;
+	font-weight: bold;
+	margin-left: 40px;
+}
+
+.basket{
+	align-items: center;
+	padding-right: 40px;
+}
+

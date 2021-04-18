@@ -6,22 +6,22 @@ class Shoes extends React.Component{
 		super(props)
 		this.state ={
 		}
-		// this.handleList = this.handleList.bind(this)
+		this.handleList = this.handleList.bind(this)
 
 	}
 	
-	// handleList(props){
-	// 	console.log(this.props.star.data);
-   //      if (this.props.star && this.props.star.data) {
-   //          return Object.keys(this.props.star.data).map((key)=>
-   //              <li key={key}>
-   //                  <Link to={`/swapi/${key}`}>{key}</Link>
-   //              </li>
-   //          )
-   //      } else {
-   //           return <li>Data is loading</li>
-   //      }
-	// }
+	handleList(){
+		console.log(this.props.shoes.data);
+		if (this.props.shoes && this.props.shoes.data) {
+			 return Object.keys(this.props.shoes.data).map((key)=>
+				  <li key={key}>
+						<span>{key}</span>
+				  </li>
+			 )
+		} else {
+			  return <li>Data is loading</li>
+		}
+	}
 
 	componentDidMount(){
 		this.props.getShoes();
@@ -31,7 +31,9 @@ class Shoes extends React.Component{
 		return(
 			<div>
 			{console.log(this.props.shoes.data.data)}
-			take items
+			<ul>
+				{this.handleList()}
+			</ul>
 			</div>
 		)
 	}
