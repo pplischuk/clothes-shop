@@ -1,5 +1,7 @@
 import React from 'react'
+
 import Item from '../item/item'
+import './shoes.css'
 
 class Shoes extends React.Component{
 	constructor(props){
@@ -13,7 +15,6 @@ class Shoes extends React.Component{
 	handleList(){
 		const  goods = this.props.shoes.data.data
 
-		console.log(goods);
 		if (this.props.shoes && this.props.shoes.data && this.props.shoes.data.data) {
 			 return (
 					goods.map((item, index) => <Item name = {item.name}
@@ -21,7 +22,6 @@ class Shoes extends React.Component{
 						brand = {item.brand}
 						img = {item.img}
 						price = {item.price}
-						description = {item.description}
 						/>
 					)
 				
@@ -37,11 +37,8 @@ class Shoes extends React.Component{
 
 	render(){
 		return(
-			<div>
-				{console.log(this.props.shoes)}
-
+			<div className = 'items'>
 					{this.handleList()}
-			
 			</div>
 		)
 	}

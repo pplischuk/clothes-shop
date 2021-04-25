@@ -1,0 +1,66 @@
+[
+	{
+		"id":1,
+		"img":"https://i2.wp.com/vergle.com/wp-content/uploads/2021/04/hdfsds.jpg?fit=900%2C1155&ssl=1",
+		"name":"DENIM COTTON JACKET",
+		"brand": "BALENCIAGA",
+		"price": 1700,
+		"description": "Fashion legend Cristóbal Balenciaga founded his couture house in 1918. With collections made of strong perfection, in a waltz of dramatic, sculptural designs and feminine yet modern silhouettes, the French maison continues "
+	},
+	{
+		"id":2,
+		"img":"https://i1.wp.com/vergle.com/wp-content/uploads/2021/03/sgdsf.jpg?fit=900%2C1155&ssl=1",
+		"name":"HOODIE WITH LOGO",
+		"brand": "GCDS",
+		"price": 440,
+		"description": "Red/black cotton logo-panelled cotton hoodie from GCDS featuring panelled design, embroidered logo, drawstring hood, long sleeves and straight hem."
+	},
+	{
+		"id":3,
+		"img":"https://i1.wp.com/vergle.com/wp-content/uploads/2021/02/shfdgsd-3.jpg?fit=900%2C1155&ssl=1",
+		"name":"PALM ANGELS",
+		"brand": "DAISY LOGO LOOSE T-SHIRT",
+		"price": 445,
+		"description": "1001 BLACK WHITE Natural (Veg)->Cotton DAISY LOGO LOOSE TEE BLACK WHITE from Palm Angels."
+	},
+	{
+		"id":4,
+		"img":"https://i2.wp.com/vergle.com/wp-content/uploads/2021/02/dfgds.jpg?fit=900%2C1155&ssl=1",
+		"name":"TEDDY BEAR COTTON HOODIE",
+		"brand": "PALM ANGELS",
+		"price": 490,
+		"description": "Black cotton headless teddy bear appliqué hoodie from PALM ANGELS featuring appliqué detail, drawstring hood, long sleeves, two front pouch pockets and straight hem."
+	},
+	{
+		"id":5,
+		"img":"https://i2.wp.com/vergle.com/wp-content/uploads/2021/02/dfggsdf-1.jpg?fit=900%2C1155&ssl=1",
+		"name":"ARROW VINTAGE BOMBER JACKET",
+		"brand": "OFF-WHITE",
+		"price": 1925,
+		"description": "Green cotton logo-band vintage bomber jacket from OFF-WHITE featuring drawstring hood, logo band, signature Arrows motif, sleeve zip pocket, front zip fastening, two side pouch pockets, long sleeves and ribbed edge."
+	},
+	{
+		"id":6,
+		"img":"https://i1.wp.com/vergle.com/wp-content/uploads/2020/11/dhsfgsfgsd.jpg?fit=900%2C1155&ssl=1",
+		"name":"COTTON T-SHIRT",
+		"brand": "VERSACE",
+		"price": 495,
+		"description": "More is more and less is a bore. Boasting a cotton construction, this Pop Temple print T-shirt from Versace is the one that will turn you into the centre of attention. You can handle the stares. Featuring a round neck, short sleeves, a straight hem and Pop Temple print."
+	},
+	{
+		"id":7,
+		"img":"https://i1.wp.com/vergle.com/wp-content/uploads/2020/11/dfgsfgsdfgsd.jpg?fit=900%2C1155&ssl=1",
+		"name":"LOGO EMBROIDERED SWEATER",
+		"brand": "MONCLER",
+		"price": 815,
+		"description": "Dark blue/white virgin wool logo-jacquard crew-neck jumper from Moncler featuring all-over logo print, crew neck, long sleeves, ribbed cuffs and ribbed hem."
+	},
+	{
+		"id":8,
+		"img":"https://i0.wp.com/vergle.com/wp-content/uploads/2020/11/sdfhsgsfgsfds.jpg?fit=900%2C1155&ssl=1",
+		"name":"DENIM SHIRT",
+		"brand": "GUCCI",
+		"price": 1395	,
+		"description": "Blue cotton stonewashed denim Web stripe shirt from Gucci featuring straight-point collar, press-stud fastening, gold-tone hardware, two chest patch pockets, long sleeves, curved hem, green and red Web stripe, enamelled interlocking G Horsebit"
+	}
+]

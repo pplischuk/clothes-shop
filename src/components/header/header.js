@@ -6,7 +6,7 @@ import {
 import Home from '../home/home'
 import AccessoriesContainer from '../../redux/containers/AccessoriesContainer'
 import ShoesContainer from '../../redux/containers/shoesContainer'
-import Clothes from '../clothes/clothes'
+import ClothesContainer from '../../redux/containers/clothesContainer'
 import ContactUs from '../contact/contact'
 import Basket from '../basket/basket'
 import './header.css'
@@ -33,7 +33,7 @@ function Header(){
 				<Route exact path = '/' component = {Home}/>
 				<Route exact path = '/accessories' component = {AccessoriesContainer}/>
 				<Route exact path = '/shoes' component = {ShoesContainer}/>
-				<Route exact path = '/clothes' component = {Clothes}/>
+				<Route exact path = '/clothes' component = {ClothesContainer}/>
 				<Route exact path = '/contact' component = {ContactUs}/>
 				<Route exact path = '/basket' component = {Basket}/>
 			</Switch>

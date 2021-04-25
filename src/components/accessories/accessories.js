@@ -1,6 +1,8 @@
 import React from 'react'
 import Item from '../item/item'
 
+import './accessories.css'
+
 class Accessories extends React.Component{
 	constructor(props){
 		super(props)
@@ -11,12 +13,18 @@ class Accessories extends React.Component{
 	}
 	
 	handleList(){
-		console.log(this.props.accessories.data);
-		if (this.props.accessories && this.props.accessories.data) {
-			 return Object.keys(this.props.accessories.data).map((key)=>
-				  <li key={key}>
-						<span>{key}</span>
-				  </li>
+		const goods = this.props.accessories.data.data
+
+		if (this.props.accessories
+			&& this.props.accessories.data
+			&& this.props.accessories.data.data) {
+			 return (
+				goods.map((item, index) => <Item name = {item.name}
+				key = {index}
+				img = {item.img}
+				price = {item.price}
+				/>
+			)
 			 )
 		} else {
 			  return <li>Data is loading</li>
@@ -29,12 +37,8 @@ class Accessories extends React.Component{
 
 	render(){
 		return(
-			<div>
-				{console.log(this.props.accessories)}
-				<Item price = '500'/>
-				<ul>
-					{this.handleList()}
-				</ul>
+			<div className = 'items'>
+				{this.handleList()}
 			</div>
 		)
 	}

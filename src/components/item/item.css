@@ -1,0 +1,56 @@
+.item{
+	width: 400px;
+	padding: 10px;
+	margin: 30px;
+	border: 1px solid rgb(134, 133, 133);
+	border-radius: 10px;
+	box-shadow: 0 0 10px #000;
+}
+
+.image img{
+	width: 200px;
+	text-align: center;
+}
+
+.image{
+	text-align: center;
+}
+
+.title{
+	font-size: large;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+.price{
+	font-size: normal;
+	text-align: center;
+	padding-bottom: 15px;
+
+}
+
+.btn{
+	padding-bottom: 15px;
+}
+
+button{
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 50px;
+	border: 0;
+	background-color: #746bde;
+	cursor: pointer;
+	color: beige;
+	font-size: 15px;
+}
+
+button:hover{
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.description{
+
+}
