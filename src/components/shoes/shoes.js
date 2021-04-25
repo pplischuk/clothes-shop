@@ -11,13 +11,21 @@ class Shoes extends React.Component{
 	}
 	
 	handleList(){
-		console.log(this.props.shoes.data);
-		if (this.props.shoes && this.props.shoes.data) {
-			 return Object.keys(this.props.shoes.data).map((key)=>
-				  <li key={key}>
-						<span>{key}</span>
-				  </li>
-			 )
+		const  goods = this.props.shoes.data.data
+
+		console.log(goods);
+		if (this.props.shoes && this.props.shoes.data && this.props.shoes.data.data) {
+			 return (
+					goods.map((item, index) => <Item name = {item.name}
+						key = {index}
+						brand = {item.brand}
+						img = {item.img}
+						price = {item.price}
+						description = {item.description}
+						/>
+					)
+				
+					)
 		} else {
 			  return <li>Data is loading</li>
 		}
@@ -30,11 +38,10 @@ class Shoes extends React.Component{
 	render(){
 		return(
 			<div>
-				{console.log(this.props.shoes.data.data)}
-				<Item price = '100' img = "picture"/>
-				<ul>
+				{console.log(this.props.shoes)}
+
 					{this.handleList()}
-				</ul>
+			
 			</div>
 		)
 	}
