@@ -9,7 +9,6 @@ import ShoesContainer from '../../redux/containers/shoesContainer'
 import ClothesContainer from '../../redux/containers/clothesContainer'
 import ContactUs from '../contact/contact'
 import Basket from '../basket/basket'
-import Filter from '../filter/filter'
 import './header.css'
 
 
@@ -33,7 +32,6 @@ function Header(){
 					</a>
 				</div>
 			</div>
-			<Filter />
 			<Switch>
 				<Route exact path = '/' component = {Home}/>
 				<Route exact path = '/accessories' component = {AccessoriesContainer}/>

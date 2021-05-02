@@ -2,12 +2,16 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Shoes from '../../components/shoes/shoes'
 import { getShoesThunk } from '../actions/actions'
+import Filter from '../../components/filter/filter'
 
 const ShoesContainer = ({shoes, getShoes}) => (
-	<Shoes
-		shoes ={shoes}
-		getShoes = {getShoes}
-	/>	
+	<>
+		<Filter />
+		<Shoes
+			shoes ={shoes}
+			getShoes = {getShoes}
+		/>
+	</>
 )
 
 const mapStateToProps = (state) => ({

@@ -4,21 +4,22 @@ import { connect } from 'react-redux'
 import './filter.css'
 
 class Filter extends React.Component{
-	constructor(){
-		super()
+	constructor(props){
+		super(props)
+		this.state = '';
 
 		this.search = this.search.bind.this
 	}
 
-	search(){
-		console.log('l;k')
+	search(e){
+		this.SetState = {state:e.targe.value}
 	}
 
 	render(){
 		return(
 			<div className = 'filter'>
 				<form>
-					<input type = 'text' placeholder = 'search' />
+					<input type = 'text' onChange = {this.search} placeholder = 'search' />
 				</form>
 			</div>
 		)

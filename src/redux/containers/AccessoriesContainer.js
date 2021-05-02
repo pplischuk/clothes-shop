@@ -2,12 +2,16 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Accessories from '../../components/accessories/accessories'
 import { getAccessoriesThunk } from '../actions/actionsAccessories'
+import Filter from '../../components/filter/filter'
 
 const AccessoriesContainer = ({accessories, getAccessories}) => (
-	<Accessories
-		accessories ={accessories}
-		getAccessories = {getAccessories}
-	/>	
+	<>
+		<Filter />
+		<Accessories
+			accessories ={accessories}
+			getAccessories = {getAccessories}
+		/>	
+	</>
 )
 
 const mapStateToProps = (state) => ({
