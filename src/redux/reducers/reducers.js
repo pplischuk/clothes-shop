@@ -4,7 +4,7 @@ const initialState = {
 	data: [],
 	isLoading: false,
 	errors:[],
-	text:''
+	text:'',
 }
 
 const reducers = (state = initialState, action) => {

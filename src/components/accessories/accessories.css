@@ -4,3 +4,21 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
+.search{
+	display: block;
+	height: 100%;
+	float: left;
+}
+
+input{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid rgb(71, 68, 68);
+	font-size: 16px;
+	outline: none;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+}

@@ -1,7 +1,7 @@
 import {
 	GET_SHOES_REQUEST,
 	GET_SHOES_SUCCESS,
-	GET_SHOES_FAIL
+	GET_SHOES_FAIL,
 	} from '../constants/constants';
 import { getShoesAll } from '../../api/goods.js'
 
@@ -17,7 +17,8 @@ export const getShoesRequest = () => ({
 export const getShoesError = payload => ({
 	type: GET_SHOES_FAIL,
 	payload
-})
+});
+
 
 export const getShoesThunk = () => {
 	return dispatch => {

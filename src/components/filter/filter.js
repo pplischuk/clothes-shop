@@ -1,42 +1,42 @@
-import React from 'react'
-import { connect } from 'react-redux'
+// import React from 'react'
+// import { connect } from 'react-redux'
 
-import './filter.css'
+// import './filter.css'
 
-class Filter extends React.Component{
-	constructor(props){
-		super(props)
-		this.state = '';
+// class Filter extends React.Component{
+// 	constructor(props){
+// 		super(props)
+// 		this.state = '';
 
-		this.search = this.search.bind.this
-	}
+// 		this.search = this.search.bind.this
+// 	}
 
-	search(e){
-		this.SetState = {state:e.targe.value}
-	}
+// 	search(e){
+// 		this.SetState = {state:e.targe.value}
+// 	}
 
-	render(){
-		return(
-			<div className = 'filter'>
-				<form>
-					<input type = 'text' onChange = {this.search} placeholder = 'search' />
-				</form>
-			</div>
-		)
-	}
-}
+// 	render(){
+// 		return(
+// 			<div className = 'filter'>
+// 				<form>
+// 					<input type = 'text' onChange = {this.search} placeholder = 'search' />
+// 				</form>
+// 			</div>
+// 		)
+// 	}
+// }
 
-const mapStateToProps = (state) => ({
-	state
-	//маємо доступ до будь якого значення з стейту
-})
+// const mapStateToProps = (state) => ({
+// 	state
+// 	//маємо доступ до будь якого значення з стейту
+// })
 
-const mapDispatchToProps = dispatch => {
-	return {
+// const mapDispatchToProps = dispatch => {
+// 	return {
 		
-	}
-};
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(Filter)
+// 	}
+// };
+// export default connect(
+// 	mapStateToProps,
+// 	mapDispatchToProps
+// )(Filter)

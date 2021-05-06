@@ -2,20 +2,20 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Shoes from '../../components/shoes/shoes'
 import { getShoesThunk } from '../actions/actions'
-import Filter from '../../components/filter/filter'
 
-const ShoesContainer = ({shoes, getShoes}) => (
+function ShoesContainer({shoes, getShoes}){
+	return(
 	<>
-		<Filter />
 		<Shoes
 			shoes ={shoes}
 			getShoes = {getShoes}
 		/>
 	</>
-)
+	)
+}
 
 const mapStateToProps = (state) => ({
-	shoes: state.shoes
+	shoes: state.shoes,
 	//маємо доступ до будь якого значення з стейту
 })
 
