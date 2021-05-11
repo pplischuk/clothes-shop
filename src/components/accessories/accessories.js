@@ -1,6 +1,7 @@
 import React from 'react'
 import Item from '../item/item'
 import ScrollToTop from '../scrollToTop/scrollToTop'
+import FilterContainer from '../../redux/containers/filterContainer'
 import './accessories.css'
 
 class Accessories extends React.Component{
@@ -56,6 +57,7 @@ class Accessories extends React.Component{
 							placeholder = 'Search...'
 							onChange ={this.handleChange}
 						/>
+				<FilterContainer />
 				</div>
 				<div className = 'items'>
 						{this.handleList()}

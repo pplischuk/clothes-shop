@@ -6,7 +6,6 @@ import {
 import './item.css'
 
 function Item(props, {onLoadItemClicked}){
-
 	return(
 			<div className = 'item'>
 				<div className = 'titleItem'>{props.brand} {props.name}</div>

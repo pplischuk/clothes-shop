@@ -30,10 +30,10 @@ function Header(props){
 						<li><Link to= '/clothes'>Clothes</Link></li>
 						<li><Link to= '/contact'>Contact us</Link></li>
 					</ul>
-					<a href = 'basket' className = 'basket'>
+					<Link to = '/basket' className = 'basket'>
 					<img src ='https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png'
 					alt = 'basket'/>
-					</a>
+					</Link>
 				</div>
 			</div>
 			<Switch>

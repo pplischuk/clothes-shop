@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Item from '../item/item'
 import ScrollToTop from '../scrollToTop/scrollToTop'
 import './clothes.css'

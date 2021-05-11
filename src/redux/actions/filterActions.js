@@ -1,27 +1,41 @@
-export const sortItems = (item, sort) => (dispatch) => {
-	const items = item.slice();
+import { FILTER_ITEM } from '../constants/filterConstants'
+
+export const orderProducts=(data ,sort)=> {
+	return {
+		 type: FILTER_ITEM,
+		 payload: {
+			  sort: sort,
+			  data: data,
+		 }
+	}
+}
+
+
+
+export const sortProducts = (items, sort) => (dispatch) => {
+	const data = items.slice();
 	if (sort !== "") {
-		 items.sort((a, b) =>
-					sort === "lowestprice"
+		 data.sort((a, b) =>
+					sort === "tolowest"
 					? a.price > b.price
 					? 1
 					: -1
-					: sort === "highestprice"
+					: sort === "tohighest"
 					? a.price < b.price
 					? 1
 					: -1
-					: sort === "atoz"
+					: sort === "abc"
 					? a.name > b.name
 					? 1
 					: -1
-					: sort === "ztoa"
+					: sort === "cba"
 					? a.name < b.name
 					? 1
 					: -1
 					: null
 		 );
 	} else {
-		 items.sort((a, b) => (a.id > b.id ? 1 : -1));
+		 data.sort((a, b) => (a.id > b.id ? 1 : -1));
 	}
-	// dispatch(orderItems(items, sort))
+	dispatch(orderProducts(data, sort))
 }

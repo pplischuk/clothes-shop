@@ -44,6 +44,10 @@
 	.item{
 		width: 150px;
 	}
+
+	.titleItem{
+		font-size: 15px;
+	}
 }
 
 @media(max-width:410px) {
@@ -77,6 +81,9 @@
 		height: 30px;
 		width: 50px;
 		font-size: 10px;
+	}
+	.titleItem{
+		font-size: 13px;
 	}
 }
 
