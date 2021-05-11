@@ -3,22 +3,25 @@
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .search{
 	display: block;
 	height: 100%;
 	float: left;
+	display: flex;
+	flex-direction: column;
 }
 
-input{
+.search input{
 	width: 200px;
 	height: 30px;
-	border-radius: 10px;
-	border: 1px solid rgb(71, 68, 68);
-	font-size: 16px;
-	outline: none;
+	background-color: #e6e8ed;
+	border: none;
+	border-radius: 3px;
+	font-size: 12px;
 	padding-left: 10px;
-	margin-top: 20px;
-	margin-left: 20px;
+	margin-top: 30px;
+	margin-left: 30px;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Item from '../item/item'
+import ScrollToTop from '../scrollToTop/scrollToTop'
 import './shoes.css'
 
 class Shoes extends React.Component{
@@ -25,7 +26,8 @@ class Shoes extends React.Component{
 					goods.filter((val) => {
 						if(this.state.search === ''){
 							return val
-						}else if(val.brand.toLowerCase().includes(this.state.search.toLowerCase())){
+						}else if(val.brand.toLowerCase().includes(this.state.search.toLowerCase())
+						||val.brand.toUpperCase().includes(this.state.search.toUpperCase())){
 							return val
 						}
 					}).map((item, index) => <Item name = {item.name}
@@ -60,6 +62,7 @@ class Shoes extends React.Component{
 				<div className = 'items'>
 						{this.handleList()}
 				</div>
+				<ScrollToTop />
 			</div>
 		)
 	}

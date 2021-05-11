@@ -3,12 +3,13 @@ import {
 	GET_ACCESSORIES_SUCCESS,
 	GET_ACCESSORIES_FAIL
 	} from '../constants/constantsAccessories'
-
+import {LOAD_CURRENT_ITEM} from '../constants/currentItemConstants'
 const initialState = {
 	data: [],
 	isLoading: false,
 	errors:[],
-	text:''
+	text:'',
+	currentItem: null,
 }
 
 const accessoriesReducer = (state = initialState, action) => {
@@ -30,6 +31,11 @@ const accessoriesReducer = (state = initialState, action) => {
 				errors: action.payload,
 				isLoading: false
 		  }
+		case LOAD_CURRENT_ITEM:
+			return {
+				...state,
+				currentItem: action.item
+			}
 	  
 	  default:
 		 return state

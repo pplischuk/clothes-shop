@@ -2,12 +2,14 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Accessories from '../../components/accessories/accessories'
 import { getAccessoriesThunk } from '../actions/actionsAccessories'
+import {loadCurrentItem} from '../actions/actionsLoadItem'
 
 const AccessoriesContainer = ({accessories, getAccessories}) => (
 	<>
 		<Accessories
 			accessories ={accessories}
 			getAccessories = {getAccessories}
+			onLoadItemClicked={() => this.props.loadCurrentItem(accessories)}
 		/>	
 	</>
 )
@@ -19,7 +21,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => {
 	return {
-		getAccessories: () => dispatch(getAccessoriesThunk())
+		getAccessories: () => dispatch(getAccessoriesThunk()),
+		loadCurrentItem: (item) => dispatch(loadCurrentItem(item))
 	}
 };
 

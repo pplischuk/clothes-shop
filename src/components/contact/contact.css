@@ -1,0 +1,97 @@
+.form{
+	margin-top: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 380px;
+	height: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+button, 
+button:active, 
+button:focus,
+input, 
+input:active, 
+input:focus {
+    outline: none;
+}
+
+.title{
+	display: block;
+	font-size: 15px;
+	margin: 0 auto;
+	padding: 40px 0;
+	text-align: center;
+	letter-spacing: 0.3px;
+	color:#4b4646;
+}
+
+
+
+h1{
+	display: inline-block;
+	font-size: 10px;
+}
+
+input{
+	display: inline-block;
+	background-color: #e6e8ed;
+	border: none;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-bottom: 13px;
+	padding-left: 15px;
+	font-size: 12px;
+}
+
+.inp{
+	display: block;
+	width: 285px;
+	height: 50px;
+}
+
+.btn2{
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		height: 50px;
+		border: 0;
+		background-color: #746bde;
+		cursor: pointer;
+		margin-bottom: 170px;
+}
+
+.btn2:hover{
+	transform: scale(1.03);
+	transition: 0.2s;
+}
+
+.btn2 p{
+	margin: 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0.3px;
+}
+
+
+.check{
+	padding: 0 0 20px 40px;
+}
+
+.check h1{
+	padding-left: 10px;
+	position: relative;
+	bottom: 2px;
+	color: #4b4646;
+	font-weight: normal;
+}
+
+.err{
+	color:red;
+	font-size: 10px;
+	text-align: center;
+	padding-bottom: 15px;
+}

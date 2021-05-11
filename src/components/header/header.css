@@ -2,6 +2,12 @@
 	display: flex;
 }
 
+@media (max-width:840px) {
+	.navList{
+		flex-direction: column;
+	}
+}
+
 li{
 	margin: 0;
 	list-style-type: none;

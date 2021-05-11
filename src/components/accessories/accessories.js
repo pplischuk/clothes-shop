@@ -1,6 +1,7 @@
 import React from 'react'
 import Item from '../item/item'
-
+import Filter from '../filter/filter'
+import ScrollToTop from '../scrollToTop/scrollToTop'
 import './accessories.css'
 
 class Accessories extends React.Component{
@@ -27,13 +28,15 @@ class Accessories extends React.Component{
 				goods.filter((val) => {
 					if(this.state.search === ''){
 						return val
-					}else if(val.name.toLowerCase().includes(this.state.search.toLowerCase())){
+					}else if(val.name.toLowerCase().includes(this.state.search.toLowerCase())
+					||val.brand.toUpperCase().includes(this.state.search.toUpperCase())){
 						return val
 					}
 				}).map((item, index) => <Item name = {item.name}
 				key = {index}
 				img = {item.img}
 				price = {item.price}
+				id = {item.id}
 				/>
 			)
 			 )
@@ -54,10 +57,12 @@ class Accessories extends React.Component{
 							placeholder = 'Search...'
 							onChange ={this.handleChange}
 						/>
+						<Filter />
 				</div>
 				<div className = 'items'>
 						{this.handleList()}
 				</div>
+				<ScrollToTop />
 			</div>
 		)
 	}
