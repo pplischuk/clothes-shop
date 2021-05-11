@@ -2,6 +2,9 @@
 	position: fixed;
 	bottom: 2rem;
 	right: 1.5rem;
-	animation: fadeIn 700ms ease-in-out 1s both;
 	cursor: pointer;
- }
+}
+.scrollToTop:hover{
+	transform: scale(1.2);
+	transition: 0.3s;
+}

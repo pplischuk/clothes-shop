@@ -5,6 +5,47 @@
 @media (max-width:840px) {
 	.navList{
 		flex-direction: column;
+		position: relative;
+		top: 100px;
+	}
+	.navList li{
+		font-size: 25px;
+		padding-bottom: 10px;
+	}
+	.wrapper{
+		height: 250px;
+	}
+	.itemPos{
+		flex-direction: column;
+	}
+}
+
+@media(max-width:410px) {
+	.item{
+		width: 200px;
+		margin: 15px;
+	}
+	.header{
+		flex-direction: column;	
+	}
+	.header .logo{
+		padding-top: 15px;
+		margin: 0;
+	}
+	.navList{
+		top: 10px;
+		margin: 0;
+	}
+	.navList li{
+		margin: 0;
+	}
+	.navList a{
+		margin: 0 auto;
+	}
+	.basket{
+		position: absolute;
+		top: 15px;
+		right: 0;
 	}
 }
 
@@ -55,10 +96,9 @@ img{
 	color: beige;
 	font-weight: bold;
 	margin-left: 40px;
-}
+	text-shadow: 1px 1px 2px black, 0 0 1em #746bde}
 
 .basket{
 	align-items: center;
 	padding-right: 40px;
 }
-

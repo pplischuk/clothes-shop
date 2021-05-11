@@ -52,7 +52,7 @@ class Shoes extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div  className = 'itemPos'>
 				<div className = 'search'>
 						<input type = 'text'
 							placeholder = 'Search...'

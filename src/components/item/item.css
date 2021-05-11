@@ -1,5 +1,5 @@
 .item{
-	width: 400px;
+	width: 300px;
 	padding: 10px;
 	margin: 30px;
 	border: 1px solid rgb(134, 133, 133);
@@ -16,18 +16,17 @@
 	text-align: center;
 }
 
-.title{
+.titleItem{
+	height: 40px;
 	font-size: large;
 	text-align: center;
 	font-weight: bold;
-	padding-top: 15px;
+	padding: 10px 0;
 }
 
 .price{
 	font-size: normal;
 	text-align: center;
-	padding-bottom: 15px;
-
 }
 
 .btn{
@@ -37,7 +36,7 @@
 button{
 	display: block;
 	margin: 0 auto;
-	width: 150px;
+	width: 100px;
 	height: 50px;
 	border: 0;
 	background-color: #746bde;
@@ -49,10 +48,6 @@ button{
 button:hover{
 	border-radius: 10px;
 	transition: 0.3s;
-}
-
-.description{
-
 }
 
 .btns{
