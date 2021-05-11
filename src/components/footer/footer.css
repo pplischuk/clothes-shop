@@ -13,10 +13,12 @@ p{
 	font-size: 12px;
 }
 
-h2{
+.footer h2{
 	font-size: 20px;
 	font-weight: normal;
 	font-family: sans-serif;
+	position: relative;
+	left: 70px;
 }
 
 .links{
